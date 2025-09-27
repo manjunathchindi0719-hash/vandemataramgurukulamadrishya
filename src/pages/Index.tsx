@@ -1,61 +1,121 @@
 import { SocialButton } from "@/components/SocialButton";
-import { Instagram, Youtube, Facebook, Linkedin, Twitter } from "lucide-react";
+import { Instagram, Youtube, Facebook, Linkedin, Twitter, Play } from "lucide-react";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-background flex flex-col items-center justify-center px-4 py-12">
-      <div className="w-full max-w-md space-y-8 text-center">
+    <div className="min-h-screen bg-background px-4 py-12">
+      <div className="max-w-6xl mx-auto space-y-12">
         {/* Header */}
-        <div className="space-y-4">
-          <h1 className="text-3xl md:text-4xl font-bold text-foreground">
-            Manjunath M. Chindi
+        <div className="text-center space-y-4">
+          <h1 className="text-4xl md:text-6xl font-bold text-foreground">
+            Vande Mataram Gurukulam
           </h1>
-          <h2 className="text-xl text-muted-foreground">
-            Follow me on:
+          <h2 className="text-xl md:text-2xl italic text-muted-foreground">
+            An initiative by Adrishya
           </h2>
         </div>
 
-        {/* Social Media Links */}
-        <div className="space-y-4">
-          <SocialButton 
-            href="https://instagram.com/manjunath.chindi" 
-            variant="instagram"
+        {/* YouTube Thumbnail */}
+        <div className="flex justify-center">
+          <a
+            href="https://youtu.be/9tc7O1oqjC0?si=blUefemaQ91QzhIO"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="relative group overflow-hidden rounded-lg shadow-[var(--shadow-soft)] hover:shadow-[var(--shadow-medium)] transition-[var(--transition-smooth)]"
           >
-            <Instagram size={24} />
-            Instagram
-          </SocialButton>
+            <div className="w-80 h-48 md:w-96 md:h-56 bg-muted flex items-center justify-center border border-border">
+              <div className="text-center space-y-2">
+                <div className="w-16 h-16 bg-youtube rounded-full flex items-center justify-center mx-auto group-hover:scale-110 transition-[var(--transition-smooth)]">
+                  <Play size={24} fill="white" className="text-white ml-1" />
+                </div>
+                <p className="text-muted-foreground text-sm">Click to watch video</p>
+                <p className="text-xs text-muted-foreground">(Upload thumbnail image to replace this placeholder)</p>
+              </div>
+            </div>
+          </a>
+        </div>
 
-          <SocialButton 
-            href="https://youtube.com/@manjunathchindi" 
-            variant="youtube"
-          >
-            <Youtube size={24} />
-            YouTube
-          </SocialButton>
+        {/* Two Column Layout */}
+        <div className="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto">
+          {/* Vande Mataram Gurukulam Column */}
+          <div className="space-y-6">
+            <h3 className="text-2xl font-bold text-foreground text-center">
+              Vande Mataram Gurukulam
+            </h3>
+            <div className="space-y-4">
+              <SocialButton 
+                href="https://www.instagram.com/vandemataram_gurukulam/" 
+                variant="instagram"
+              >
+                <Instagram size={24} />
+                Instagram
+              </SocialButton>
 
-          <SocialButton 
-            href="https://facebook.com/manjunath.chindi" 
-            variant="facebook"
-          >
-            <Facebook size={24} />
-            Facebook
-          </SocialButton>
+              <SocialButton 
+                href="https://www.youtube.com/@vandemataramgurukulam2466" 
+                variant="youtube"
+              >
+                <Youtube size={24} />
+                YouTube
+              </SocialButton>
 
-          <SocialButton 
-            href="https://linkedin.com/in/manjunathchindi" 
-            variant="linkedin"
-          >
-            <Linkedin size={24} />
-            LinkedIn
-          </SocialButton>
+              <SocialButton 
+                href="https://www.facebook.com/p/Vande-Mataram-Gurukulam_-100089345387911/" 
+                variant="facebook"
+              >
+                <Facebook size={24} />
+                Facebook
+              </SocialButton>
 
-          <SocialButton 
-            href="https://twitter.com/manjunathchindi" 
-            variant="twitter"
-          >
-            <Twitter size={24} />
-            X (Twitter)
-          </SocialButton>
+              <SocialButton 
+                href="https://in.linkedin.com/company/vande-mataram-gurukulam" 
+                variant="linkedin"
+              >
+                <Linkedin size={24} />
+                LinkedIn
+              </SocialButton>
+
+              <SocialButton 
+                href="https://x.com/VM_Gurukulam" 
+                variant="twitter"
+              >
+                <Twitter size={24} />
+                X (Twitter)
+              </SocialButton>
+            </div>
+          </div>
+
+          {/* Adrishya Column */}
+          <div className="space-y-6">
+            <h3 className="text-2xl font-bold text-foreground text-center">
+              Adrishya
+            </h3>
+            <div className="space-y-4">
+              <SocialButton 
+                href="https://www.instagram.com/adrishya_47/" 
+                variant="instagram"
+              >
+                <Instagram size={24} />
+                Instagram
+              </SocialButton>
+
+              <SocialButton 
+                href="https://www.youtube.com/@adrishya9507" 
+                variant="youtube"
+              >
+                <Youtube size={24} />
+                YouTube
+              </SocialButton>
+
+              <SocialButton 
+                href="https://www.facebook.com/profile.php?id=100067102712667" 
+                variant="facebook"
+              >
+                <Facebook size={24} />
+                Facebook
+              </SocialButton>
+            </div>
+          </div>
         </div>
       </div>
     </div>
