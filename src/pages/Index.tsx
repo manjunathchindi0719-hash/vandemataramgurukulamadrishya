@@ -1,5 +1,6 @@
 import { SocialButton } from "@/components/SocialButton";
 import { Instagram, Youtube, Facebook, Linkedin, Twitter, Play } from "lucide-react";
+import thumbnailImage from "@/assets/youtube-thumbnail.jpg";
 
 const Index = () => {
   return (
@@ -21,15 +22,18 @@ const Index = () => {
             href="https://youtu.be/9tc7O1oqjC0?si=blUefemaQ91QzhIO"
             target="_blank"
             rel="noopener noreferrer"
-            className="relative group overflow-hidden rounded-lg shadow-[var(--shadow-soft)] hover:shadow-[var(--shadow-medium)] transition-[var(--transition-smooth)]"
+            className="relative group overflow-hidden rounded-lg shadow-[var(--shadow-soft)] hover:shadow-[var(--shadow-medium)] transition-[var(--transition-smooth)] hover:scale-[1.02]"
           >
-            <div className="w-80 h-48 md:w-96 md:h-56 bg-muted flex items-center justify-center border border-border">
-              <div className="text-center space-y-2">
-                <div className="w-16 h-16 bg-youtube rounded-full flex items-center justify-center mx-auto group-hover:scale-110 transition-[var(--transition-smooth)]">
+            <div className="relative">
+              <img 
+                src={thumbnailImage} 
+                alt="Vande Mataram Gurukulam Journey Video"
+                className="w-80 h-48 md:w-96 md:h-56 object-cover"
+              />
+              <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-[var(--transition-smooth)] flex items-center justify-center">
+                <div className="w-16 h-16 bg-youtube rounded-full flex items-center justify-center group-hover:scale-110 transition-[var(--transition-smooth)]">
                   <Play size={24} fill="white" className="text-white ml-1" />
                 </div>
-                <p className="text-muted-foreground text-sm">Click to watch video</p>
-                <p className="text-xs text-muted-foreground">(Upload thumbnail image to replace this placeholder)</p>
               </div>
             </div>
           </a>
