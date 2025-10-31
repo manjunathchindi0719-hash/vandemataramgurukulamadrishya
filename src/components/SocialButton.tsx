@@ -23,7 +23,7 @@ export const SocialButton = ({ href, children, className, variant }: SocialButto
       target="_blank"
       rel="noopener noreferrer"
       className={cn(
-        "w-full max-w-md px-5 py-3 rounded-lg font-semibold text-base",
+        "w-full max-w-xs px-5 py-3 rounded-lg font-semibold text-lg",
         "flex items-center justify-center gap-3",
         "shadow-[var(--shadow-soft)] hover:shadow-[var(--shadow-medium)]",
         "transition-[var(--transition-smooth)]",
