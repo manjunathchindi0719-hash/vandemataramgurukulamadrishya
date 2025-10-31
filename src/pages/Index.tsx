@@ -5,8 +5,19 @@ import logoImage from "@/assets/vande-mataram-logo.jpg";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-background px-4 py-12">
-      <div className="max-w-6xl mx-auto space-y-12">
+    <div className="min-h-screen bg-background px-4 py-12 relative">
+      {/* Decorative Border Art */}
+      <div className="fixed inset-0 pointer-events-none">
+        <div className="absolute inset-0 border-8 border-primary/20 rounded-3xl m-4"></div>
+        <div className="absolute inset-0 border-4 border-primary/10 rounded-3xl m-8"></div>
+        {/* Corner Ornaments */}
+        <div className="absolute top-8 left-8 w-16 h-16 border-t-4 border-l-4 border-primary/30 rounded-tl-lg"></div>
+        <div className="absolute top-8 right-8 w-16 h-16 border-t-4 border-r-4 border-primary/30 rounded-tr-lg"></div>
+        <div className="absolute bottom-8 left-8 w-16 h-16 border-b-4 border-l-4 border-primary/30 rounded-bl-lg"></div>
+        <div className="absolute bottom-8 right-8 w-16 h-16 border-b-4 border-r-4 border-primary/30 rounded-br-lg"></div>
+      </div>
+      
+      <div className="max-w-6xl mx-auto space-y-12 relative z-10">
         {/* Header */}
         <div className="text-center space-y-4">
           <div className="flex justify-center mb-6">
@@ -57,7 +68,7 @@ const Index = () => {
               rel="noopener noreferrer"
               className="w-full max-w-md px-6 py-4 rounded-lg font-semibold text-lg bg-primary text-primary-foreground shadow-[var(--shadow-soft)] hover:shadow-[var(--shadow-medium)] transition-[var(--transition-smooth)] hover:scale-[1.02] active:scale-[0.98] text-center"
             >
-              Visit Our Official Website
+              Go to our Official Website
             </a>
             <a
               href="https://www.vandemataramgurukulam.org/support"
