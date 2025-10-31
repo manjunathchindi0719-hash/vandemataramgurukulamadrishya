@@ -66,7 +66,7 @@ const Index = () => {
               href="https://www.vandemataramgurukulam.org/"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full max-w-md px-6 py-4 rounded-lg font-semibold text-lg bg-primary text-primary-foreground shadow-[var(--shadow-soft)] hover:shadow-[var(--shadow-medium)] transition-[var(--transition-smooth)] hover:scale-[1.02] active:scale-[0.98] text-center"
+              className="w-full max-w-md px-5 py-3 rounded-lg font-semibold text-base bg-primary text-primary-foreground shadow-[var(--shadow-soft)] hover:shadow-[var(--shadow-medium)] transition-[var(--transition-smooth)] hover:scale-[1.02] active:scale-[0.98] text-center"
             >
               Go to our Official Website
             </a>
@@ -74,7 +74,7 @@ const Index = () => {
               href="https://www.vandemataramgurukulam.org/support"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full max-w-md px-6 py-4 rounded-lg font-semibold text-lg bg-secondary text-secondary-foreground shadow-[var(--shadow-soft)] hover:shadow-[var(--shadow-medium)] transition-[var(--transition-smooth)] hover:scale-[1.02] active:scale-[0.98] text-center"
+              className="w-full max-w-md px-5 py-3 rounded-lg font-semibold text-base bg-secondary text-secondary-foreground shadow-[var(--shadow-soft)] hover:shadow-[var(--shadow-medium)] transition-[var(--transition-smooth)] hover:scale-[1.02] active:scale-[0.98] text-center"
             >
               For Donation / Seva
             </a>
