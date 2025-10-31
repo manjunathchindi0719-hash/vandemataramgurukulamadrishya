@@ -88,7 +88,7 @@ const Index = () => {
             <h3 className="text-2xl font-bold text-foreground text-center">
               Vande Mataram Gurukulam
             </h3>
-            <div className="space-y-4">
+            <div className="space-y-4 flex flex-col items-center">
               <SocialButton 
                 href="https://www.instagram.com/vandemataram_gurukulam/" 
                 variant="instagram"
@@ -136,7 +136,7 @@ const Index = () => {
             <h3 className="text-2xl font-bold text-foreground text-center">
               Adrishya
             </h3>
-            <div className="space-y-4">
+            <div className="space-y-4 flex flex-col items-center">
               <SocialButton 
                 href="https://www.instagram.com/adrishya_47/" 
                 variant="instagram"
