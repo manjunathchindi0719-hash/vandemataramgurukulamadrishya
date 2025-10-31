@@ -1,6 +1,7 @@
 import { SocialButton } from "@/components/SocialButton";
 import { Instagram, Youtube, Facebook, Linkedin, Twitter, Play } from "lucide-react";
 import thumbnailImage from "@/assets/youtube-thumbnail.jpg";
+import logoImage from "@/assets/vande-mataram-logo.jpg";
 
 const Index = () => {
   return (
@@ -8,6 +9,13 @@ const Index = () => {
       <div className="max-w-6xl mx-auto space-y-12">
         {/* Header */}
         <div className="text-center space-y-4">
+          <div className="flex justify-center mb-6">
+            <img 
+              src={logoImage} 
+              alt="Vande Mataram Gurukulam Logo" 
+              className="w-24 h-24 md:w-32 md:h-32 object-contain rounded-full shadow-[var(--shadow-soft)]"
+            />
+          </div>
           <h1 className="text-4xl md:text-6xl font-bold text-foreground">
             Vande Mataram Gurukulam
           </h1>
