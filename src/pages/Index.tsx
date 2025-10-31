@@ -16,27 +16,50 @@ const Index = () => {
           </h2>
         </div>
 
-        {/* YouTube Thumbnail */}
-        <div className="flex justify-center">
-          <a
-            href="https://youtu.be/9tc7O1oqjC0?si=blUefemaQ91QzhIO"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="relative group overflow-hidden rounded-lg shadow-[var(--shadow-soft)] hover:shadow-[var(--shadow-medium)] transition-[var(--transition-smooth)] hover:scale-[1.02]"
-          >
-            <div className="relative">
-              <img 
-                src={thumbnailImage} 
-                alt="Vande Mataram Gurukulam Journey Video"
-                className="w-80 h-48 md:w-96 md:h-56 object-cover"
-              />
-              <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-[var(--transition-smooth)] flex items-center justify-center">
-                <div className="w-16 h-16 bg-youtube rounded-full flex items-center justify-center group-hover:scale-110 transition-[var(--transition-smooth)]">
-                  <Play size={24} fill="white" className="text-white ml-1" />
+        {/* YouTube Thumbnail & Action Buttons */}
+        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto items-center">
+          {/* Left: YouTube Thumbnail */}
+          <div className="flex justify-center md:justify-end">
+            <a
+              href="https://youtu.be/9tc7O1oqjC0?si=blUefemaQ91QzhIO"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="relative group overflow-hidden rounded-lg shadow-[var(--shadow-soft)] hover:shadow-[var(--shadow-medium)] transition-[var(--transition-smooth)] hover:scale-[1.02]"
+            >
+              <div className="relative">
+                <img 
+                  src={thumbnailImage} 
+                  alt="Vande Mataram Gurukulam Journey Video"
+                  className="w-80 h-48 md:w-96 md:h-56 object-cover"
+                />
+                <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-[var(--transition-smooth)] flex items-center justify-center">
+                  <div className="w-16 h-16 bg-youtube rounded-full flex items-center justify-center group-hover:scale-110 transition-[var(--transition-smooth)]">
+                    <Play size={24} fill="white" className="text-white ml-1" />
+                  </div>
                 </div>
               </div>
-            </div>
-          </a>
+            </a>
+          </div>
+
+          {/* Right: Action Buttons */}
+          <div className="space-y-4 flex flex-col items-center md:items-start">
+            <a
+              href="https://www.vandemataramgurukulam.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full max-w-md px-6 py-4 rounded-lg font-semibold text-lg bg-primary text-primary-foreground shadow-[var(--shadow-soft)] hover:shadow-[var(--shadow-medium)] transition-[var(--transition-smooth)] hover:scale-[1.02] active:scale-[0.98] text-center"
+            >
+              Visit Our Official Website
+            </a>
+            <a
+              href="https://www.vandemataramgurukulam.org/support"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full max-w-md px-6 py-4 rounded-lg font-semibold text-lg bg-secondary text-secondary-foreground shadow-[var(--shadow-soft)] hover:shadow-[var(--shadow-medium)] transition-[var(--transition-smooth)] hover:scale-[1.02] active:scale-[0.98] text-center"
+            >
+              For Donation / Seva
+            </a>
+          </div>
         </div>
 
         {/* Two Column Layout */}
